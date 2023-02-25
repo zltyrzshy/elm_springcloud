@@ -5,7 +5,21 @@
     <groupId>org.tango</groupId>
     <artifactId>elm_springcloud</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>user_server_10100</module>
+        <module>food_server_10200</module>
+        <module>business_server_10300</module>
+        <module>cart_server_10400</module>
+        <module>deliveryaddress_server_10500</module>
+        <module>orders_server_10600</module>
+    </modules>
     <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <!--dependmanagement是用在父工程中声明依赖，不引用。子模块继承之后再引包。作用是，锁定版本，子模块不用写grouid and version-->
     <dependencyManagement>
